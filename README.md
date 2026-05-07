@@ -1,102 +1,45 @@
 # base-contract-deploy
-contract
-Dummy change 1
-Dummy change 2
-Dummy change 3
-Dummy change 4
-Dummy change 5
-Dummy change 6
-Dummy change 7
-Dummy change 8
-Dummy change 9
-Dummy change 10
-Dummy change 11
-Dummy change 12
-Dummy change 13
-Dummy change 14
-Dummy change 15
-Dummy change 16
-Dummy change 17
-Dummy change 18
-Dummy change 19
-Dummy change 20
-Dummy change 21
-Dummy change 22
-Dummy change 23
-Dummy change 24
-Dummy change 25
-Dummy change 26
-Dummy change 27
-Dummy change 28
-Dummy change 29
-Dummy change 30
-Dummy change 31
-Dummy change 32
-Dummy change 33
-Dummy change 34
-Dummy change 35
-Dummy change 36
-Dummy change 37
-Dummy change 38
-Dummy change 39
-Dummy change 40
-Dummy change 41
-Dummy change 42
-Dummy change 43
-Dummy change 44
-Dummy change 45
-Dummy change 46
-Dummy change 47
-Dummy change 48
-Dummy change 49
-Dummy change 50
-Dummy change 51
-Dummy change 52
-Dummy change 53
-Dummy change 54
-Dummy change 55
-Dummy change 56
-Dummy change 57
-Dummy change 58
-Dummy change 59
-Dummy change 60
-Dummy change 61
-Dummy change 62
-Dummy change 63
-Dummy change 64
-Dummy change 65
-Dummy change 66
-Dummy change 67
-Dummy change 68
-Dummy change 69
-Dummy change 70
-Dummy change 71
-Dummy change 72
-Dummy change 73
-Dummy change 74
-Dummy change 75
-Dummy change 76
-Dummy change 77
-Dummy change 78
-Dummy change 79
-Dummy change 80
-Dummy change 81
-Dummy change 82
-Dummy change 83
-Dummy change 84
-Dummy change 85
-Dummy change 86
-Dummy change 87
-Dummy change 88
-Dummy change 89
-Dummy change 90
-Dummy change 91
-Dummy change 92
-Dummy change 93
-Dummy change 94
-Dummy change 95
-Dummy change 96
-Dummy change 97
-Dummy change 98
-Dummy change 99
-Dummy change 100
+
+A simple Base Layer 2 smart contract deployment starter project.
+
+## What is included
+
+- `contracts/BaseCounter.sol` — a clean Solidity contract that tracks a counter and emits events
+- `scripts/deploy.js` — Hardhat deployment script for Base Goerli or another network
+- `hardhat.config.js` — configuration for compiling and network deployment
+- `package.json` — developer dependencies and commands
+- `.gitignore` — ignored local build files and secrets
+
+## Quick start
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Add your deployer private key and Base Goerli RPC URL to a `.env` file:
+   ```env
+   DEPLOYER_PRIVATE_KEY=0x...
+   BASEGOERLI_RPC_URL=https://rpc.goerli.base.org
+   ```
+
+3. Compile the contract:
+   ```bash
+   npm run compile
+   ```
+
+4. Deploy to Base Goerli:
+   ```bash
+   npm run deploy
+   ```
+
+## Contract behavior
+
+- `name` returns the contract name
+- `count` stores the current counter value
+- `increment()` increments the counter and emits `CountIncremented`
+- `reset()` resets the counter to zero
+
+## Notes
+
+This repository now contains original smart contract code and a deployment scaffold for a Base Layer 2 project.

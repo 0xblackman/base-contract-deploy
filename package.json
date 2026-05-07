@@ -1,0 +1,14 @@
+{
+  "name": "base-contract-deploy",
+  "version": "0.1.0",
+  "description": "Base Layer 2 contract deploy starter project.",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network basegoerli"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.18.0"
+  }
+}
